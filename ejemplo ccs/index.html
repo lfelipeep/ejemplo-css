@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light"> <!-- Cambia a "dark" para probar -->
+<head>
+  <meta charset="UTF-8">
+  <title>Variables CSS</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Bienvenido al sitio de ejemplo</h1>
+  <p>Este sitio usa variables CSS para aplicar temas y mantener el estilo limpio.</p>
+  <button onclick="toggleTheme()">Cambiar tema</button>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>

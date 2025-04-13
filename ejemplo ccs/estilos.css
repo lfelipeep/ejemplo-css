@@ -1,0 +1,46 @@
+/*  VARIABLES GLOBALES - Tema Claro  */
+:root {
+    --bg-color: #E1EEBC;
+    --text-color: #90C67C;
+    --main-color: #67AE6E;
+    --accent-color: #328E6E;
+    --font-base: 'Poppins', sans-serif;
+  }
+  
+  /*  Tema Oscuro activado con data-theme="dark" */
+  [data-theme="dark"] {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --main-color: #1DCD9F;
+    --accent-color: #169976;
+  }
+  
+  /*  Aplicación de las variables en el sitio */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-base);
+    margin: 0;
+    padding: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  h1 {
+    color: var(--main-color);
+  }
+  
+  button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--main-color);
+  }
+  
